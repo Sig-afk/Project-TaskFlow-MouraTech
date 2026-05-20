@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles.css">
+  <title>TaskFlow</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TaskFlow</h1>
+      <button id="themeToggle">
+        🌙 Dark Mode
+      </button>
+    </header>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Digite uma tarefa...">
+      <button id="addTaskBtn">
+        Adicionar
+      </button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">
+        Todas
+      </button>
+      <button class="filter-btn" data-filter="pending">
+        Pendentes
+      </button>
+      <button class="filter-btn" data-filter="completed">
+        Concluídas
+      </button>
+    </div>
+
+    <p id="taskCounter">
+      0 tarefas
+    </p>
+    <ul id="taskList"></ul>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
